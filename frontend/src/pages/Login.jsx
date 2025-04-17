@@ -27,51 +27,56 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-image" />
-      <div className="login-content">
-        <div className="login-form">
-          <h2>Login</h2>
-          <form onSubmit={handleSubmit}>
-            <label>Email</label>
-            <div className="input-container">
-              <FaEnvelope className="icon" />
-              <input
-                type="email"
-                placeholder="example@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+    <div className="login-page">
+      <header className="app-header">SkillUp Tracker</header>
+      <div className="login-container">
+        <div className="login-box">
+          <div className="login-left">
+            <h2>Login</h2>
+            <form onSubmit={handleSubmit}>
+              <label>Email</label>
+              <div className="input-container">
+                <FaEnvelope className="icon" />
+                <input
+                  type="email"
+                  placeholder="example@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              {errors.email && <p className="error-message">{errors.email}</p>}
+
+              <label>Password</label>
+              <div className="input-container">
+                <FaLock className="icon" />
+                <input
+                  type="password"
+                  placeholder="●●●●●●"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              {errors.password && (
+                <p className="error-message">{errors.password}</p>
+              )}
+
+              <button type="submit">Log In</button>
+              <p className="register-text">
+                Don't have an account?{" "}
+                <span onClick={() => navigate("/register")}>
+                  Register here
+                </span>
+              </p>
+            </form>
+          </div>
+
+          <div className="login-right">
+            <div className="login-right-image" />
+            <div className="login-quote-box">
+              <h3>Document your learnings</h3>
+              <p>Unlock your potential with SkillUp Tracker.</p>
             </div>
-            {errors.email && <p className="error-message">{errors.email}</p>}
-
-            <label>Password</label>
-            <div className="input-container">
-              <FaLock className="icon" />
-              <input
-                type="password"
-                placeholder="●●●●●●"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-            {errors.password && (
-              <p className="error-message">{errors.password}</p>
-            )}
-
-            <button type="submit">Login</button>
-            <p className="register-text">
-              Don't have an account?{" "}
-              <span onClick={() => navigate("/register")}>
-                Register here
-              </span>
-            </p>
-          </form>
-        </div>
-
-        <div className="login-quote-box">
-          <h3>Document your learnings</h3>
-          <p>Unlock your potential with SkillUp Tracker.</p>
+          </div>
         </div>
       </div>
     </div>
