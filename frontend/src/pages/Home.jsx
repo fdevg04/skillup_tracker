@@ -30,12 +30,22 @@ function Home() {
       </header>
 
       <main className="homepage-hero">
-        <div className="hero-content">
-          <h1 className="animated-title align-left">Empower your growth. Track your progress.</h1>
-          <button className="start-btn aligned-btn" onClick={handleStart}>
-            Start Now →
-          </button>
+        <div className="hero-content fade-in">
+          <h1 className="animated-title centered-text">Empower your growth. Track your progress.</h1>
         </div>
+
+        <div className="hero-image-container fade-in">
+          <img src="/assets/heroImage.jpg" alt="Skill development visual" className="hero-image blurred" />
+          <div className="hero-image-overlay centered-overlay">
+            <h2>Document your learnings</h2>
+            <p>Unlock your potential with SkillUp Tracker.</p>
+          </div>
+        </div>
+        <div className="hero-content fade-in"></div>
+          <div className="spacer" />
+            <button className="start-btn centered-btn" onClick={handleStart}>
+              Start Now →
+            </button>
       </main>
 
       <footer className="homepage-footer" id="homepage-footer">
