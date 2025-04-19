@@ -31,14 +31,14 @@ function Home() {
 
       <main className="homepage-hero">
         <div className="hero-content fade-in">
-          <h1 className="animated-title centered-text">Empower your growth. Track your progress.</h1>
+          <h1 className="animated-title centered-text">Level up your skills. One step at a time.</h1>
         </div>
 
         <div className="hero-image-container fade-in">
           <img src="/assets/heroImage.jpg" alt="Skill development visual" className="hero-image blurred" />
           <div className="hero-image-overlay centered-overlay">
-            <h2>Document your learnings</h2>
-            <p>Unlock your potential with SkillUp Tracker.</p>
+            <h2>Capture your progress</h2>
+            <p>Stay focused. Stay improving.</p>
           </div>
         </div>
         <div className="hero-content fade-in"></div>
@@ -48,16 +48,42 @@ function Home() {
             </button>
       </main>
 
-      <footer className="homepage-footer" id="homepage-footer">
-        <div className="footer-content">
-          <h3 className="footer-title">SkillUp Tracker</h3>
-          <p>Email: <a href="mailto:contact@skilluptracker.com">contact@skilluptracker.com</a></p>
-          <p className="footer-links">
-            <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
-          </p>
-          <p className="copyright">© 2025 SkillUp Tracker. All rights reserved.</p>
-        </div>
-      </footer>
+        <footer className="homepage-footer" id="homepage-footer">
+          <div className="footer-columns">
+            {/* Columna 1 */}
+            <div className="footer-column align-start">
+              <h3 className="footer-subtitle">CONTACT US</h3>
+              <p className="footer-text">Contact email</p>
+              <div className="footer-links-block">
+                <div className="footer-icon-row"><strong>GITHUB</strong><img src="/assets/github-icon.png" alt="GitHub" className="footer-icon" /></div>
+                <div className="footer-icon-row"><strong>JOIN OUR DISCORD</strong><img src="/assets/discord-icon.png" alt="Discord" className="footer-icon" /></div>
+              </div>
+              <div className="footer-labels">
+              </div>
+            </div>
+
+            {/* Columna 2 */}
+            <div className="footer-column align-start border-left">
+              <h3 className="footer-subtitle">#HASHTAG</h3>
+              <div className="footer-links-block">
+                <div className="footer-icon-row"><strong>LINKEDIN</strong><img src="/assets/linkedin-icon.png" alt="LinkedIn" className="footer-icon" /></div>
+                <div className="footer-icon-row"><strong>INSTAGRAM</strong><img src="/assets/instagram-icon.png" alt="Instagram" className="footer-icon" /></div>
+              </div>
+              <div className="footer-labels">
+              </div>
+            </div>
+
+            {/* Columna 3 */}
+            <div className="footer-column align-end border-left footer-bottom-right">
+              <p className="footer-credits">Developed by Fernando González</p>
+              <p>
+                GitHub: <a href="https://github.com/fdevg04" target="_blank">@fdevg04</a>
+              </p>
+              <p className="copyright">© SkillUp Tracker 2025</p>
+            </div>
+          </div>
+        </footer>
+
     </div>
   );
 }

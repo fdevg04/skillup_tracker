@@ -73,8 +73,8 @@ function Login() {
           <div className="login-right">
             <div className="login-right-image" />
             <div className="login-quote-box">
-              <h3>Document your learnings</h3>
-              <p>Unlock your potential with SkillUp Tracker.</p>
+              <h3>Your learning is safe here</h3>
+              <p>Log in to unlock your progress.</p>
             </div>
           </div>
         </div>

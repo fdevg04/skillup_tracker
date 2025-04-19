@@ -103,8 +103,8 @@ function Register() {
           <div className="register-right">
             <div className="register-right-image" />
             <div className="register-quote-box">
-              <h3>Welcome to SkillUp Tracker</h3>
-              <p>Start documenting your journey today.</p>
+              <h3>Your journey starts here</h3>
+              <p>Every step matters.</p>
             </div>
           </div>
         </div>
